@@ -54,10 +54,8 @@ def search_web():
 # Main program loop
 while True:
     speak("How can I assist you?")
-    user_input = listen().lower()
-    if "Talk to victoria" in user_input:
-        speak("Hi Victoria, do you understand English?")
-    elif "reminder" in user_input:
+    user_input = listen().lower()    
+    if "reminder" in user_input:
         set_reminder()
     elif "to-do" in user_input:
         create_todo()
